@@ -2,41 +2,46 @@
 
 ### 完成下列选择题，请将答案写到每题后面括号里
 
-1.在下列选择器中，哪一个代表 section class 里面的所有 title class? ( )
+1.在下列选择器中，哪一个代表 section class 里面的所有 title class? (A)
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>  
 C <lable>.section, .title {}</lable>  
 D <lable>.section > .title {}</lable>  
 
-
-2.在下列选择器中，哪一个代表 section class 内部紧邻的 title class? ( )
+2.在下列选择器中，哪一个代表 section class 内部紧邻的 title class? (D)
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>   
 C <lable>.section, .title {}</lable>   
 D <lable>.section > .title {}</lable>  
 
-
-3.在下列选择器中，哪一个代表同一个元素同时拥有 section 和 title 两个class? ( )
-
-A <lable>.section .title {}</lable>  
-B <lable>.section.title {}</lable>   
-C <lable>.section, .title {}</lable>   
-D <lable>.section > .title {}</lable>   
-
-
-
-4.在下列选择器中，哪一个代表 section 和 title 两个class 设置相同样式? ( )
+3.在下列选择器中，哪一个代表同一个元素同时拥有 section 和 title 两个class? ( B)
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>   
 C <lable>.section, .title {}</lable>   
 D <lable>.section > .title {}</lable>   
 
+4.在下列选择器中，哪一个代表 section 和 title 两个class 设置相同样式? ( C)
 
+A <lable>.section .title {}</lable>  
+B <lable>.section.title {}</lable>   
+C <lable>.section, .title {}</lable>   
+D <lable>.section > .title {}</lable>   
 
-5.在下列CSS选择器中，优先级从高到低是：( )
+------
+
+后代选择器：选择作为某元素后代的元素。 在后代选择器中，规则左边的选择器一端包括两个或多个用空格分隔的选择器，即A表示section class 里面的所有 title class，B的选择器未用空格隔开，不是后代选择器，代表的是一个class=“section title”的元素；
+
+选择器分组：为了使多个选择器拥有相同的样式，可以用逗号将两个选择器进行隔开，进行分组，即C表示section和title同时满足相同的样式；
+
+子元素选择器：比后代选择器范围要小，通过使用大于号（两边空白符可选），只选择某个元素的子元素，即D表示title class 作为section class的子元素，满足一定的样式。
+
+------
+
+5.在下列CSS选择器中，优先级从高到低是：(2)
+
 ```
 <div class="section">
     <h1 id="title" class="title">title</div>
@@ -53,7 +58,7 @@ D)  .section > h1 { color:blue; }
 4)  <lable> 以上都不对 </lable>  
 
   
-  
+
 ## 本练习知识点
 
 - CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.
