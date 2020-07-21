@@ -12,7 +12,14 @@ body {
     margin-right: 30%;
 }
 
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
 h1 {
+    text-align: center;
+    text-transform: uppercase;
     color: #fff;
     font-size: 2em;
     width: 100%;
@@ -26,16 +33,24 @@ h2 {
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    text-transform: capitalize;
 }
 
 p {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
     color: AliceBlue;
     line-height: 1.3em;
     text-align: left;
-    width: 100%;
+}
+
+p::first-line {
+    font-weight: bold;
 }
 
 .image {
+    background-image: url(../img/background-img.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -51,5 +66,17 @@ p {
     position: relative;
     top: 80%;
     width: 60%;
+    background-color: white;
+    color: black;
+    opacity: 0.75;
+    font-style: italic;
 }
 
+.caption a {
+    text-decoration: none;
+}
+
+.caption a:hover {
+    color: purple;
+    text-decoration: underline;
+}
