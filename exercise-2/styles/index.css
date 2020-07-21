@@ -18,20 +18,20 @@ h2 {
 }
 
 h1 {
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 2em;
-    width: 100%;
 }
 
 h2 {
+    padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
     font-size: 22px;
+    color: rgba(255, 255, 255, 0.5);
     line-height: 24px;
-    padding-bottom: 30px;
     text-align: left;
     text-transform: capitalize;
 }
@@ -41,8 +41,8 @@ p {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: AliceBlue;
-    line-height: 1.3em;
     text-align: left;
+    line-height: 1.3em;
 }
 
 p::first-line {
@@ -50,26 +50,26 @@ p::first-line {
 }
 
 .image {
+    height: 300px;
     background-image: url(../img/background-img.jpg);
     background-size: cover;
     background-position: center;
-    height: 300px;
 }
 
 .caption {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    line-height: 14px;
-    margin-left: 20px;
-    padding: 10px;
     position: relative;
     top: 80%;
+    display: block;
     width: 60%;
-    background-color: white;
-    color: black;
-    opacity: 0.75;
+    margin-left: 20px;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
     font-style: italic;
+    color: black;
+    line-height: 14px;
+    background-color: white;
+    opacity: 0.75;
 }
 
 .caption a {
